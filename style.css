@@ -202,14 +202,8 @@ p {
   margin: 20px 0;
 }
 
-.about .box .year_company {
+.about .box .experiences {
   min-width: 150px;
-}
-
-.about .box .year_company h5 {
-  text-transform: uppercase;
-  color: #848c90;
-  font-weight: 600;
 }
 
 .about .box .text h4 {
@@ -291,7 +285,7 @@ p {
   .about .box {
     flex-direction: column;
   }
-  .about .box .year_company {
+  .about .box .experiences {
     margin-bottom: 5px;
   }
   .interest ul {
@@ -311,7 +305,9 @@ p {
 /* ------------------------------------------------------------------------------------------------------- */
 
 /* Page catLinkdin et page numéro de téléphone: */
+
 .text h2 {
+  color: #003147;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -328,11 +324,8 @@ p {
 /* ------------------------------------------------------------------------------------------------------- */
 
 /* Blog d'isidore: */
-
-.blog_title {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.blog {
+  border: thick double #081921;
 }
 
 .shrimp {
@@ -346,7 +339,7 @@ p {
   width: 310px;
 }
 
-.blog {
+.blog_title {
   color: #003147;
 }
 
@@ -391,8 +384,8 @@ p {
 }
 
 .sleep img {
-  width: 270px;
-  height: 250px;
+  width: 240px;
+  height: 237px;
 }
 
 .sleep span,
@@ -420,4 +413,9 @@ p {
 .roof img {
   width: 430px;
   height: 300px;
+}
+
+.experiences img {
+  height: 130px;
+  border-radius: 5%;
 }
