@@ -206,7 +206,7 @@ p {
   min-width: 150px;
 }
 
-.about .box .text h4 {
+.about .box .text h3 {
   text-transform: uppercase;
   color: #2a7da2;
   font-size: 16px;
@@ -221,10 +221,11 @@ p {
   align-items: center;
 }
 
-.skills .box h4 {
+.skills .box h3 {
   text-transform: uppercase;
-  color: #848c99;
-  font-weight: 500;
+  color: #2a7da2;
+  font-size: small;
+  font-weight: 700;
 }
 
 .skills .box .percent {
@@ -267,7 +268,7 @@ p {
 .interest ul li {
   list-style: none;
   color: #2a7da2;
-  font-weight: 500;
+  font-weight: 600;
   margin: 10px 0;
 }
 
@@ -298,6 +299,7 @@ p {
 
 .interest img {
   height: 15px;
+  width: 18px;
   color: #03a9f4;
   padding-right: 2%;
 }
@@ -356,6 +358,7 @@ p {
   display: flex;
   align-items: center;
   font-weight: 500;
+  color: #333;
 }
 
 .blog h2 img {
@@ -381,11 +384,12 @@ p {
   flex-direction: row;
   justify-content: center;
   margin-bottom: 45px;
+  gap: 3%;
 }
 
 .sleep img {
-  width: 240px;
-  height: 237px;
+  width: 217px;
+  height: 207px;
 }
 
 .sleep span,
@@ -417,5 +421,6 @@ p {
 
 .experiences img {
   height: 130px;
+  width: 97px;
   border-radius: 5%;
 }
