@@ -93,18 +93,17 @@ p {
   margin-top: 15px;
 }
 
-.contact_info.education h5 {
+.contact_info.education h4 {
   color: #03a9f4;
   font-weight: 500;
 }
 
-.contact_info.education h4:nth-child(2) {
+.contact_info.education .period {
   color: #fff;
   font-weight: 500;
 }
 
-.contact_info.education h4 {
-  color: #fff;
+.contact_info.education span {
   font-weight: 300;
 }
 
