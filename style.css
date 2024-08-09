@@ -124,7 +124,7 @@ p {
   margin-top: 5px;
 }
 
-.contact_info.language .percent div {
+.contact_info.language .percent span {
   position: absolute;
   top: 0;
   left: 0;
@@ -142,16 +142,16 @@ p {
 }
 
 /* Les différents pourcentages par langage: */
-.contact_info.language .percent div.cat_langage_percent {
+.contact_info.language .percent span.cat_langage_percent {
   width: 95%;
 }
-.contact_info.language .percent div.parental_human_percent {
+.contact_info.language .percent span.parental_human_percent {
   width: 85%;
 }
-.contact_info.language .percent div.human_percent {
+.contact_info.language .percent span.human_percent {
   width: 55%;
 }
-.contact_info.language .percent div.dog_percent {
+.contact_info.language .percent span.dog_percent {
   width: 5%;
 }
 
@@ -271,31 +271,6 @@ p {
   margin: 10px 0;
 }
 
-@media (max-width: 1000px) {
-  .container {
-    margin: 10px;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .interest ul {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .about .box {
-    flex-direction: column;
-  }
-  .about .box .experiences {
-    margin-bottom: 5px;
-  }
-  .interest ul {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .skills .box {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 .interest img {
   height: 15px;
   width: 18px;
@@ -312,6 +287,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .text img {
@@ -327,6 +303,8 @@ p {
 /* Blog d'isidore: */
 .blog {
   border: thick double #081921;
+  width: 100%;
+  height: 100%;
 }
 
 .shrimp {
@@ -422,4 +400,62 @@ p {
   height: 130px;
   width: 97px;
   border-radius: 5%;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* Responsive: */
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .interest ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .shrimp {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog h2 {
+    font-size: 50px;
+  }
+  .blog p {
+    margin: 10px;
+  }
+  .sleep {
+    gap: 0%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tree {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about .box {
+    flex-direction: column;
+  }
+  .about .box .experiences {
+    margin-bottom: 5px;
+  }
+  .interest ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skills .box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog h2 {
+    font-size: 20px;
+  }
+  .blog h2 img {
+    width: 25px;
+    height: 25px;
+  }
+  .blog p,
+  .span {
+    font-size: 15px;
+  }
 }
